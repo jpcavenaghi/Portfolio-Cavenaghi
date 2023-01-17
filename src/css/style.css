@@ -1,0 +1,215 @@
+body {
+    font-family: 'sofia', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--amarelo-padrao);
+}
+
+.header a {
+    color: var(--cor-padrao-escura);
+}
+
+.header h1 {
+    font-family: 'averox', 'Gill Sans', 'Trebuchet MS', sans-serif;
+}
+
+.header ul {
+    display: flex;
+    gap: 30px;
+    font-size: 35px;
+}
+
+.header ul a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*ABOUT*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    background: url(../image/fundo_preto.webp) no-repeat center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.about .text-about {
+    max-width: 50%;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.about img {
+    height: 350px;
+    width: 350px;
+    align-self: center;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+
+/*TECHNOLOGIES*/
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--amarelo-padrao);
+    padding: 50px 0px;
+}
+
+.technologies .techs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: 30px;
+}
+
+.techs .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tech i {
+    font-size: 50px;
+}
+
+.tech .titulo-tech {
+    font-size: 35px;
+}
+
+.tech .text-tech {
+    font-size: 30px;
+}
+
+/*PROJECTS*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px;
+    margin: 20px auto 100px auto;
+
+}
+
+.projects .projects-container .project-item {
+    position: relative;
+    text-align: center;
+    border: 4px solid #000;
+    border-radius: 0px 0px 30px 30px;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.project-item img {
+    width: 100%;
+}
+
+.project-item .description-project {
+    font-size: 28px;
+}
+
+.project-item .techs-used {
+    font-size: 25px;
+    font-weight: 700;
+    gap: 30px;
+}
+
+.techs-used .fa-html5 {
+    color: var(--cor-html-icon);
+}
+
+.techs-used .fa-css3-alt {
+    color: var(--cor-css-icon);
+}
+
+.techs-used .fa-js-square {
+    color: var(--cor-js-icon);
+}
+
+.project-item .links-project {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    position: absolute;
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.links-project a {
+    background-color: var(--cor-fundo-link);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.project-item:hover .links-project {
+    visibility: visible;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 100px 0px;
+    color: var(--amarelo-padrao);
+    background-color: var(--cor-padrao-escura);
+}
+
+.footer .social a {
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer .social a:hover {
+    color: var(--amarelo-padrao);
+    transition: 0.7s;
+}
+
+/*GERAIS*/
+
+.technologies h2,
+.projects h2,
+.footer h2 {
+    padding: 30px;
+    font-size: 45px;
+}
+
+@font-face {
+    font-family: 'sofia';
+    src: url(../font/SofiaSansExtraCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'averox';
+    src: url('../font/averox.ttf');
+}

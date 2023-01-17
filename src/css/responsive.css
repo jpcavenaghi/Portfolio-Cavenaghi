@@ -1,0 +1,73 @@
+@media(max-width:500px) {
+
+    /*ABOUT*/
+
+    .about img {
+        width: 80%;
+        height: 80%;
+    }
+
+    /*PROJECTS*/
+
+    .project-item .description-project {
+        font-size: 22px;
+    }
+
+    .project-item .techs-used {
+        font-size: 20px;
+    }
+
+    .project-item .links-project {
+        font-size: 15px;
+    }
+
+    /*FOOTER*/
+
+    .footer .social a {
+        font-size: 17px;
+    }
+}
+
+@media(max-width:620px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header ul {
+        flex-direction: column;
+    }
+
+    /*ABOUT*/
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .text-about {
+        max-width: 80%;
+    }
+
+    .about img {
+        margin: 0;
+    }
+
+    /*TECHNOLOGIES*/
+
+    .technologies .techs {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width:765px) {
+    .projects .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
