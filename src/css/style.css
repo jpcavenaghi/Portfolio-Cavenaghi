@@ -135,7 +135,10 @@ body {
 .project-item .techs-used {
     font-size: 25px;
     font-weight: 700;
-    gap: 30px;
+}
+
+.techs-used i{
+    margin-left: 3px;
 }
 
 .techs-used .fa-html5 {
@@ -147,7 +150,7 @@ body {
 }
 
 .techs-used .fa-js-square {
-    color: var(--cor-js-icon);
+    color: var(--amarelo-padrao);
 }
 
 .project-item .links-project {
