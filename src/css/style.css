@@ -36,7 +36,7 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
-    background: url(../image/fundo_preto.webp) no-repeat center;
+    background: url(../image/fundo_preto.webp) #000 no-repeat center;
     background-size: cover;
     padding: 50px 0;
 }
